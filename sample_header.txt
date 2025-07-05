@@ -1,0 +1,2518 @@
+Delivered-To: parvathymohan83@gmail.com
+Received: by 2002:a05:6400:5a8c:b0:29a:3919:7e07 with SMTP id b12csp549998ecy;
+        Thu, 3 Jul 2025 20:59:22 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHeyZmknNuj1eRkmJWalizz+1ugI65sPOgI0CXDmEd0xDUQaFDzkhFilrcinh1p9UKIsT7a
+X-Received: by 2002:a05:6214:4890:b0:6fd:cfe:ebab with SMTP id 6a1803df08f44-702c6d1317dmr14087826d6.7.1751601562484;
+        Thu, 03 Jul 2025 20:59:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1751601562; cv=none;
+        d=google.com; s=arc-20240605;
+        b=FbNLK+HYYfoMKpBzEWqRx6qU3V8M/w95KpTWBR9vr9sAeRgWrZiLLfbhr7RfYb2N5K
+         rB1oqG6Fa/Gug149kNolDOKAN2i/4RaNdVUpH5ypZBz9jOiESi7J7Q4fgNCu2/BnLfVB
+         PHWqlHNZ+CJy0LT0fsj1szyx/cghRgJOplJ4o7FUx5O+QXTYDixP7Znrhd+Ma0tB45B3
+         +RjHskP2NDGhXA8se+VHNTgAey9EyUg6PDQBByCDy2IvQHj4SrwVUcPclZrxb/zIB9Iy
+         iG3mVXx5xw5qzxk3wqgoWRlRucbYnic6M6Z5GeMf2cui8Ut2a5DCCdNkRwkFTTkB3Qb5
+         xXnA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:date:message-id:subject:to:from:dkim-signature;
+        bh=FiwJ6OJx+kuclfJrVxQ0zde8dQVcy5tTVMzMLjy8vtc=;
+        fh=dSjQzxQPMzi45VfhiDJ1zc/29i6qi31uyClYgjddYhY=;
+        b=kxqjeExRM2moQzCo64ge1UMALOJkPrSq+NlDPDo83HVxqD9c9kSy/OwWfzYicRm64S
+         bxI47Zb8QGPsjfGht8k7sYY2U6EHv1uMUtL7foAvw2+g3CmwwRCpSFdVCmj+cbvwOPl2
+         hmcEiloZ7myV6t5MuDsuIVOdQ51iB0sqanZPhRefh6yCsRYP/4H//mICxoWjGKkseA8/
+         gtPIunWgk1NGaLmL7pJ05pFfgJRPb3iVJt6lrVDGf7wyZgxmyejIDasXgzyq727vuCps
+         DKNYQtl9Nq7HbzxI5gBtNutts1G5utviCLMuTD1uuQlHyT8haqHmW+n1dJ5xc/aYzzZM
+         jH/Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@us-skills.alison.com header.s=default header.b=dGYrGHCI;
+       spf=pass (google.com: domain of noreply@us-skills.alison.com designates 3.208.157.156 as permitted sender) smtp.mailfrom=noreply@us-skills.alison.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=us-skills.alison.com
+Return-Path: <noreply@us-skills.alison.com>
+Received: from us-skills.alison.com (us-skills.alison.com. [3.208.157.156])
+        by mx.google.com with ESMTPS id af79cd13be357-7d5dbdeb1a8si122844385a.154.2025.07.03.20.59.22
+        for <parvathymohan83@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Thu, 03 Jul 2025 20:59:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@us-skills.alison.com designates 3.208.157.156 as permitted sender) client-ip=3.208.157.156;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@us-skills.alison.com header.s=default header.b=dGYrGHCI;
+       spf=pass (google.com: domain of noreply@us-skills.alison.com designates 3.208.157.156 as permitted sender) smtp.mailfrom=noreply@us-skills.alison.com;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=us-skills.alison.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=us-skills.alison.com; q=dns/txt; s=default; bh=FiwJ6OJx+kuclfJrVxQ0zde8dQVcy5tTVMzMLjy8vtc=; h=from:subject:date:message-id:to:mime-version:content-type; b=dGYrGHCI1pn92CMmgKN8xZ7pPwwLjd/HSl73IfIVsm54sNGh80i6/uqpcSIaL2xApPZH3XuUX XVmk3/wMqJZa+FBHD1tFQQQiGK7OVkTSLndIkEnbCgfI8Cx7bs6Yx98C+y76ADTyqv1ehUkgd+b utHV8XTFOcJAWoDU8urXMCM=
+Content-Type: multipart/alternative; boundary="--_NmP-13cc9751823c9af2-Part_1"
+From: Alison <noreply@us-skills.alison.com>
+To: parvathymohan83@gmail.com
+Subject: Parvathy, mid-year check-in: how’s the rest of 2025 looking? 🤔
+Message-ID: <c0f21620-f624-af04-c420-1220b21dace1@us-skills.alison.com>
+Date: Fri, 04 Jul 2025 03:59:03 +0000
+MIME-Version: 1.0
+
+----_NmP-13cc9751823c9af2-Part_1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+=09<!-- favicon -->
+=09<link rel=3D"icon" type=3D"image/png" href=3D"https://cdn01.alison-stati=
+c.net/public/html/vendor/img/favicon/favicon-16x16.png" sizes=3D"16x16" />
+=09<link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://cdn01.a=
+lison-static.net/public/html/vendor/img/favicon/apple-touch-icon.png">
+=09<link rel=3D"icon" type=3D"image/png" sizes=3D"32x32 16x16" href=3D"http=
+s://cdn01.alison-static.net/public/html/vendor/img/favicon/favicon-32x32.pn=
+g">
+=09<link rel=3D"manifest" href=3D"https://cdn01.alison-static.net/public/ht=
+ml/vendor/img/favicon/manifest.json">
+=09<link rel=3D"mask-icon" href=3D"https://cdn01.alison-static.net/public/h=
+tml/vendor/img/favicon/safari-pinned-tab.svg" color=3D"#5bbad5">
+=09<meta name=3D"theme-color" content=3D"#ffffff">
+=09<!-- end favicon -->
+    <title>[FIRSTNAME], mid-year check-in: how=E2=80=99s the rest of 2025 l=
+ooking? =F0=9F=A4=94</title>
+=09<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com">
+=09<link href=3D"https://fonts.googleapis.com/css2?family=3DRoboto:ital,wgh=
+t@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=3Dswap" rel=3D"st=
+ylesheet">
+    <style type=3D"text/css">
+         table, td, div, h1, h3, p {font-family: Roboto, sans-serif; color:=
+ #2d3941; line-height: 1.5; font-size: 14pt; }
+       =20
+      </style>
+      <!--@media only screen and (max-width: 479px) {-->
+      <style type=3D"text/css">
+         @media only screen and (max-width: 479px) {
+         body {
+         width: auto!important;
+         }
+         table[class=3Dfull] {
+         width: 100%!important;
+         clear: both;
+         }
+         table[class=3Dmobile] {
+         /*width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+         td[class=3DmobileTXT] {
+         text-align: center!important;
+         vertical-align: middle!important;
+         }
+         .mobile {/*
+         width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+        table[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         float: none!important;
+         } =20
+        td[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }
+         .buttonResize{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }  =20
+         table[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         td[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         .fullCenter {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         img[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         height: auto!important;
+         }
+         table[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         table[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowRight {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowLeft {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+        .disappear {
+         display: none;  =20
+         }
+         .disappearMob {
+         display: none;
+         }
+         .title{
+          padding-top: 15px!important;
+          background-color: #0093c9!important;
+         }
+        .left{float:left; width:100% }
+         }
+         }
+      </style>
+   </head>
+
+<body leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0"=
+ style=3D"background-color: #ffffff;">
+=09
+=09<!-- GOOGLE SNIPPET -->
+    <div style=3D"display:none;font-size:1px;color:#333333;line-height:1px;=
+max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Set new goals for =
+the second half of 2025</div>
+    <!-- END GOOGLE SNIPPET -->
+
+    <!-- View in Browser Section -->
+=09<table id=3D"view-in-browser-container" style=3D"display: none; border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width: 620px;=
+" width=3D"620" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"c=
+enter" class=3D"fullCenter">
+=09=09<tbody>
+=09=09=09<tr>
+=09=09=09=09<!-- Left Column -->
+=09=09=09=09<td width=3D"310" align=3D"left" style=3D"vertical-align: middl=
+e;">
+=09=09=09=09=09<a href=3D"[STATIC_URL]" id=3D"view-in-browser-anchor" targe=
+t=3D"_blank" style=3D"text-align: center; font-family: Helvetica, Arial, sa=
+ns-serif; font-size: 15px; color: #0088cc; line-height: 22px; text-decorati=
+on: none;">View in web browser</a>
+=09=09=09=09</td>
+=09=09=09=09<td width=3D"310" align=3D"right" style=3D"vertical-align: midd=
+le;">
+=09=09=09=09=09<span valign=3D"middle" style=3D"vertical-align: top;text-al=
+ign: center; font-family: Helvetica, Arial, sans-serif; font-size: 15px; co=
+lor: #2d3942; line-height: 22px;">Share on social </span>
+=09=09=09=09=09<span>
+=09=09=09=09=09=09<a href=3D"https://www.facebook.com/sharer.php?s=3D100&u=
+=3D[STATIC_URL]" target=3D"_blank" style=3D"outline: none; border: none; te=
+xt-decoration: none;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-facebook.png" alt=3D"Share on Facebook">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09<a href=3D"https://twitter.com/share?url=3D[STATIC_URL]" =
+target=3D"_blank" style=3D"outline: none; border: none; text-decoration: no=
+ne;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-twitter.png" alt=3D"Share on Twitter">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09<a href=3D"http://www.linkedin.com/shareArticle?url=3D[ST=
+ATIC_URL]" target=3D"_blank" style=3D"outline: none; border: none; text-dec=
+oration: none;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-linkedin.png" alt=3D"Share on Linkedin">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09</span>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</tbody>
+=09</table>
+=09<!-- End View in Browser Section -->
+
+    <!-- HEADER AREA -->
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"background-size:cover; -moz-b=
+ackground-size: cover; -webkit-background-size: cover; -o-background-size: =
+cover;" bgcolor=3D"#ffffff">
+
+                    <!-- Width Enforcer -->
+                    <table width=3D"620" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" align=3D"center" class=3D"fullCenter">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src=3D"https://cdn01.alison-static=
+.net/mail/2018/email/transparent100.png" alt=3D"">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END Width Enforcer -->
+                   =20
+                    <table align=3D"center" width=3D"620" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0">
+                        <tbody>
+                            <tr>
+                                <!-- Alison Logo -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: left;">
+                                    <a href=3D"https://alison.com?utm_sourc=
+e=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_ye=
+ar_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_=
+blank" style=3D"text-decoration: none;">
+                                        <img src=3D"https://cdn01.alison-st=
+atic.net/mail/2021/email/ALISON_Logo2022_full_color.png" alt=3D"Alison" wid=
+th=3D"55%">
+                                    </a>
+                                </td>
+                                <!-- End Alison Logo -->
+
+                                <!-- Alison Links -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: right;">
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/courses/categories?u=
+tm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_ha=
+lfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" tar=
+get=3D"_blank">Explore Course Categories</a>
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/dashboard?utm_source=
+=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_yea=
+r_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_b=
+lank">Login to My Courses</a>
+                                </td>
+                                <!-- End Alison Links -->
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END HEADER AREA -->
+
+    null
+
+    <!-- FOOTER AREA -->
+=09
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full" bgcolor=3D"#ffffff">
+        <tr>
+            <td width=3D"100%" valign=3D"top">
+                <table width=3D"620" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center">
+                    <tr>
+                        <td align=3D"center">
+                            <!-- Space -->
+                            <table width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%" height=3D"25"></td>
+                                </tr>
+                            </table>
+                            <!-- End Space -->
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<table>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: left;">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"https://play.google.com/store/apps=
+/details?id=3Dcom.alison.mobile.flutter" target=3D"_blank" style=3D""><img =
+src=3D"https://cdn01.alison-static.net/mail/2020/email/google-play-badge1.p=
+ng" width=3D"160" alt=3D"" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: left;">
+=09=09=09=09=09=09=09=09=09=09<img src=3D"https://cdn01.alison-static.net/m=
+ail/2022/QR_code_scan_image1_april2023_v3.png" width=3D"160" alt=3D"" borde=
+r=3D"0">
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: center;">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"https://apps.apple.com/app/apple-s=
+tore/id1558468968" target=3D"_blank" style=3D""><img src=3D"https://cdn01.a=
+lison-static.net/mail/2020/email/apple-badge1.png" width=3D"160" alt=3D"" b=
+order=3D"0"></a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</table>
+
+                            <table width=3D"600" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%">
+                                        <!-- Centered Text -->
+                                        <table width=3D"600" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class=3D"fullCente=
+r">
+                                            <!-- SOCIAL MEDIA ICONS -->
+                                            <p style=3D"text-align: center;=
+ color: #5d666d; font-family: 'Open Sans', sans-serif; font-size: 13px; lin=
+e-height: 44px;">
+                                                Connect with us on social m=
+edia
+                                            </p>
+                                            <tr>
+                                                <td valign=3D"top" width=3D=
+"100%" style=3D"text-align: center; font-family: Helvetica, Arial, sans-ser=
+if; font-size: 14px; color: rgb(186, 186, 186); line-height: 22px;">
+                                                    <a href=3D"https://www.=
+facebook.com/AlisonCourses/" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-facebook-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Find us on Fa=
+cebook" border=3D"0"></a>
+                                                    <a href=3D"https://twit=
+ter.com/Alison_Learning" target=3D"_blank" style=3D"text-decoration: none;"=
+><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-new-tw=
+itter-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on Twitt=
+er" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+linkedin.com/company/alison" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-linkedin-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on =
+LinkedIn" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+instagram.com/alisonlearning/" target=3D"_blank" style=3D"text-decoration: =
+none;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-=
+new-instagram-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us =
+on Instagram" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiktok.com/@a=
+lisonlearning" target=3D"_blank" style=3D"text-decoration: none;"><img src=
+=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-new-tiktok-foot=
+er-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on TikTok" border=
+=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.quora.com/=
+" target=3D"_blank" style=3D"text-decoration: none;"><img src=3D"https://cd=
+n01.alison-static.net/mail/2018/automated/quora-logo.png" width=3D"38" heig=
+ht=3D"38" alt=3D"Follow us on Quora" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09
+                                                </td>
+                                            </tr>
+                                            <!-- END SOCIAL MEDIA ICONS -->
+=09=09=09=09=09=09=09=09=09
+                                            <tr >
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!-->
+                                                    <!--<![endif]-->
+                                                    <!--[if !mso]><!--><br>=
+<span style=3D"font-family: 'Open Sans', Helvetica ; font-weight: normal;">=
+<!--<![endif]-->No longer want to receive emails from Alison? Simply <span =
+style=3D"color: rgb(28, 186, 200);"><!--subscribe--><a href=3D"https://alis=
+on.com/unsubscribe?instant=3D1&lid=3D30019063&k=3DcGFydmF0aHltb2hhbjgzQGdtY=
+WlsLmNvbQ=3D=3D&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_camp=
+aign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=
+=3Dmarketing" style=3D"text-decoration: none; color: #0088cc;">Unsubscribe<=
+/a><!--unsub--></span>.
+                                                    <!--[if !mso]><!-->
+                                                    </span>
+                                                    <!--<![endif]-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!--><spa=
+n style=3D"font-family: 'Open Sans', Helvetica; font-weight: normal;"><!--<=
+![endif]-->Mount Carmel, Loughrea, Co. Galway, H62 AV62, Ireland.<br>=C2=A9=
+ 2025 Alison</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td width=3D"100%" height=
+=3D"25"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- END FOOTER AREA -->
+    <img src=3D"http://www.google-analytics.com/collect?v=3D1&tid=3DUA-5450=
+2782-1&cid=3D30019063&t=3Devent&ni=3D1&cs=3Doutbound+marketing&ea=3Dopen&ec=
+=3Demail&cm=3Demail&cn=3Dww_halfway_year_july2025&el=3Dww_halfway_year_july=
+2025">
+<img src=3D"https://alison.com/email/marketing?u=3D30019063&j=3D7553&h=3D27=
+a523b6398df5e5a047&a=3Dww_halfway_year_july2025"></body>
+</html>
+----_NmP-13cc9751823c9af2-Part_1
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+=09<!-- favicon -->
+=09<link rel=3D"icon" type=3D"image/png" href=3D"https://cdn01.alison-stati=
+c.net/public/html/vendor/img/favicon/favicon-16x16.png" sizes=3D"16x16" />
+=09<link rel=3D"apple-touch-icon" sizes=3D"180x180" href=3D"https://cdn01.a=
+lison-static.net/public/html/vendor/img/favicon/apple-touch-icon.png">
+=09<link rel=3D"icon" type=3D"image/png" sizes=3D"32x32 16x16" href=3D"http=
+s://cdn01.alison-static.net/public/html/vendor/img/favicon/favicon-32x32.pn=
+g">
+=09<link rel=3D"manifest" href=3D"https://cdn01.alison-static.net/public/ht=
+ml/vendor/img/favicon/manifest.json">
+=09<link rel=3D"mask-icon" href=3D"https://cdn01.alison-static.net/public/h=
+tml/vendor/img/favicon/safari-pinned-tab.svg" color=3D"#5bbad5">
+=09<meta name=3D"theme-color" content=3D"#ffffff">
+=09<!-- end favicon -->
+    <title>[FIRSTNAME], mid-year check-in: how=E2=80=99s the rest of 2025 l=
+ooking? =F0=9F=A4=94</title>
+=09<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com">
+=09<link href=3D"https://fonts.googleapis.com/css2?family=3DRoboto:ital,wgh=
+t@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=3Dswap" rel=3D"st=
+ylesheet">
+    <style type=3D"text/css">
+         table, td, div, h1, h3, p {font-family: Roboto, sans-serif; color:=
+ #2d3941; line-height: 1.5; font-size: 14pt; }
+       =20
+      </style>
+      <!--@media only screen and (max-width: 479px) {-->
+      <style type=3D"text/css">
+         @media only screen and (max-width: 479px) {
+         body {
+         width: auto!important;
+         }
+         table[class=3Dfull] {
+         width: 100%!important;
+         clear: both;
+         }
+         table[class=3Dmobile] {
+         /*width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+         td[class=3DmobileTXT] {
+         text-align: center!important;
+         vertical-align: middle!important;
+         }
+         .mobile {/*
+         width: 100%!important;
+         padding-left: 20px;
+         padding-right: 20px;
+         clear: both;*/
+         }
+        table[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         float: none!important;
+         } =20
+        td[class=3DbuttonResize]{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }
+         .buttonResize{
+         width: 50%!important;
+         margin:auto!important;
+         text-align: center!important;
+         }  =20
+         table[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         td[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         .fullCenter {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both!important;
+         }
+         img[class=3DfullCenter] {
+         width: 100%!important;
+         text-align: center!important;
+         clear: both;
+         height: auto!important;
+         }
+         table[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowLeft] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         table[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         td[class=3DflowRight] {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowRight {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+         .flowLeft {
+         width: 100%!important;
+         margin: auto!important;
+         text-align: center!important;
+         padding-bottom: 15px;  =20
+         }
+        .disappear {
+         display: none;  =20
+         }
+         .disappearMob {
+         display: none;
+         }
+         .title{
+          padding-top: 15px!important;
+          background-color: #0093c9!important;
+         }
+        .left{float:left; width:100% }
+         }
+         }
+      </style>
+   </head>
+
+<body leftmargin=3D"0" topmargin=3D"0" marginwidth=3D"0" marginheight=3D"0"=
+ style=3D"background-color: #ffffff;">
+=09
+=09<!-- GOOGLE SNIPPET -->
+    <div style=3D"display:none;font-size:1px;color:#333333;line-height:1px;=
+max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Set new goals for =
+the second half of 2025</div>
+    <!-- END GOOGLE SNIPPET -->
+
+    <!-- View in Browser Section -->
+=09<table id=3D"view-in-browser-container" style=3D"display: none; border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width: 620px;=
+" width=3D"620" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" align=3D"c=
+enter" class=3D"fullCenter">
+=09=09<tbody>
+=09=09=09<tr>
+=09=09=09=09<!-- Left Column -->
+=09=09=09=09<td width=3D"310" align=3D"left" style=3D"vertical-align: middl=
+e;">
+=09=09=09=09=09<a href=3D"[STATIC_URL]" id=3D"view-in-browser-anchor" targe=
+t=3D"_blank" style=3D"text-align: center; font-family: Helvetica, Arial, sa=
+ns-serif; font-size: 15px; color: #0088cc; line-height: 22px; text-decorati=
+on: none;">View in web browser</a>
+=09=09=09=09</td>
+=09=09=09=09<td width=3D"310" align=3D"right" style=3D"vertical-align: midd=
+le;">
+=09=09=09=09=09<span valign=3D"middle" style=3D"vertical-align: top;text-al=
+ign: center; font-family: Helvetica, Arial, sans-serif; font-size: 15px; co=
+lor: #2d3942; line-height: 22px;">Share on social </span>
+=09=09=09=09=09<span>
+=09=09=09=09=09=09<a href=3D"https://www.facebook.com/sharer.php?s=3D100&u=
+=3D[STATIC_URL]" target=3D"_blank" style=3D"outline: none; border: none; te=
+xt-decoration: none;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-facebook.png" alt=3D"Share on Facebook">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09<a href=3D"https://twitter.com/share?url=3D[STATIC_URL]" =
+target=3D"_blank" style=3D"outline: none; border: none; text-decoration: no=
+ne;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-twitter.png" alt=3D"Share on Twitter">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09=09<a href=3D"http://www.linkedin.com/shareArticle?url=3D[ST=
+ATIC_URL]" target=3D"_blank" style=3D"outline: none; border: none; text-dec=
+oration: none;">
+=09=09=09=09=09=09=09<img src=3D"https://cdn.alison-static.net/mail/2018/ge=
+neric/generic-small-share-linkedin.png" alt=3D"Share on Linkedin">
+=09=09=09=09=09=09</a>
+=09=09=09=09=09</span>
+=09=09=09=09</td>
+=09=09=09</tr>
+=09=09</tbody>
+=09</table>
+=09<!-- End View in Browser Section -->
+
+    <!-- HEADER AREA -->
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full">
+        <tbody>
+            <tr>
+                <td align=3D"center" style=3D"background-size:cover; -moz-b=
+ackground-size: cover; -webkit-background-size: cover; -o-background-size: =
+cover;" bgcolor=3D"#ffffff">
+
+                    <!-- Width Enforcer -->
+                    <table width=3D"620" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" align=3D"center" class=3D"fullCenter">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src=3D"https://cdn01.alison-static=
+.net/mail/2018/email/transparent100.png" alt=3D"">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END Width Enforcer -->
+                   =20
+                    <table align=3D"center" width=3D"620" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0">
+                        <tbody>
+                            <tr>
+                                <!-- Alison Logo -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: left;">
+                                    <a href=3D"https://alison.com?utm_sourc=
+e=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_ye=
+ar_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_=
+blank" style=3D"text-decoration: none;">
+                                        <img src=3D"https://cdn01.alison-st=
+atic.net/mail/2021/email/ALISON_Logo2022_full_color.png" alt=3D"Alison" wid=
+th=3D"55%">
+                                    </a>
+                                </td>
+                                <!-- End Alison Logo -->
+
+                                <!-- Alison Links -->
+                                <td width=3D"310" height=3D"100" style=3D"v=
+ertical-align: middle; text-align: right;">
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/courses/categories?u=
+tm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_ha=
+lfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" tar=
+get=3D"_blank">Explore Course Categories</a>
+                                    <a style=3D"text-decoration: none; disp=
+lay: block; color: #0093c9; font-family: 'Open Sans', sans-serif; font-size=
+: 14px; line-height: 22px;" href=3D"https://alison.com/dashboard?utm_source=
+=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_yea=
+r_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_b=
+lank">Login to My Courses</a>
+                                </td>
+                                <!-- End Alison Links -->
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- END HEADER AREA -->
+
+    <!-- MAIN EMAIL WRAPPER -->
+<table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" alig=
+n=3D"center" class=3D"full">
+    <tbody>
+        <tr>
+            <td align=3D"center" valign=3D"top" bgcolor=3D"#f7f7f7">
+               =20
+                <!-- MAIL INNER WRAPPER -->
+                <table width=3D"650" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center" class=3D"fullCenter" bgcolor=3D"#f7f7f7" style=
+=3D"color: #ffffff;">
+                    <tbody>
+=09=09=09=09=09=09<!-- Heading -->
+                        <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#ff=
+ffff" width=3D"620" valign=3D"top">
+                                <a href=3D"https://alison.com/tag/goal-sett=
+ing?utm_content=3Dheader&&utm_source=3Doutbound+marketing&utm_medium=3Demai=
+l&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm=
+_emailtype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01.alison-=
+static.net/mail/2022/ww_halfway_year_july2025_header.png" alt=3D"Halfway Ch=
+eck" style=3D"width: 650px; height: auto;"></a>
+                            </td>
+                        </tr>
+                        <!-- Heading -->
+=09=09=09=09=09=09<!-- Spacer Row -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#f9fbfd" style=3D"height: 20px;"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- END Spacer Row -->
+                        <!-- Paragraphs -->
+                        <tr>
+                            <td style=3D"text-align: left; background: #f9f=
+bfd;">
+                                <div style=3D"padding-left: 45px; padding-r=
+ight: 45px;">
+=09=09=09=09=09=09=09=09=09=09<p style=3D"text-align: left; color: #000000;=
+ font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 32px;">Hi=
+ Parvathy, </p>
+
+<p style=3D"text-align: left; color: #000000; font-family: 'Roboto', sans-s=
+erif; font-size: 18px; line-height: 32px;">Half of 2025 is over. But there=
+=E2=80=99s still plenty of time to shape your story.=20
+=09=09=09=09=09=09=09=09=09</p>=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<p style=3D"text-align: left; color: #000000; font-fam=
+ily: 'Roboto', sans-serif; font-size: 18px; line-height: 32px;">Maybe you=
+=E2=80=99ve already hit some of your goals. Maybe you=E2=80=99re still figu=
+ring them out. Either way, now=E2=80=99s the perfect time to pause, reset, =
+and refocus. </p>
+=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"text-alig=
+n: left; color: #000000; font-family: 'Roboto', sans-serif; font-size: 18px=
+; line-height: 30px;">You=E2=80=99ve got 6 months ahead and endless possibi=
+lities. And we=E2=80=99ve got  <a href=3D"https://alison.com/tag/goal-setti=
+ng?utm_content=3Dhyperlink&&utm_source=3Doutbound+marketing&utm_medium=3Dem=
+ail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&u=
+tm_emailtype=3Dmarketing">free courses </a> to help you reach your next mil=
+estone.=20
+=09=09=09=09=09=09=09=09=09</p>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<p style=3D"text-alig=
+n: left; color: #000000; font-family: 'Roboto', sans-serif; font-size: 18px=
+; line-height: 30px;">
+Check them out below!=20
+=09=09=09=09=09=09=09=09=09</p>
+
+
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09
+</div>
+=09=09=09=09=09=09
+                        =20
+                            </td>
+                        </tr>
+=09=09=09=09=09=09
+=09=09=09=09=09
+=09=09=09=09   <!-- End Paragraphs -->
+=09=09=09=09=09=09<!-- Spacer -->
+=09=09=09=09=09=09<tr>
+                            <td style=3D"height: 20px; background: #f9fbfd;=
+"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- End Spacer -->
+=09=09=09=09=09=09<!--  1 Banner -->
+                        <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#ff=
+ffff" width=3D"650" valign=3D"top">
+                                <a href=3D"https://alison.com/tag/cooking?u=
+tm_content=3Dsection&&utm_source=3Doutbound+marketing&utm_medium=3Demail&ut=
+m_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_ema=
+iltype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01.alison-stat=
+ic.net/mail/2022/ww_halfway_year_july2025_banner1.png" alt=3D"Health" style=
+=3D"display: block"  width=3D"650" height=3D"auto"></a>
+                            </td>
+                        </tr>
+                        <!-- End Leader 1 Banner -->
+=09=09=09=09=09=09=09=09=09=09=09=09<!-- Spacer -->
+=09=09=09=09=09=09<tr>
+                            <td style=3D"height: 10px; background: #fff4de;=
+"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- End Spacer -->
+                       <!-- COURSES SECTION -->
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#fff4de">
+                      <tbody>
+                          <tr>
+                              <td align=3D"center" valign=3D"top" height=3D=
+"10px"  bgcolor=3D"#fff4de"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#fff4de">
+                     <tbody>             =20
+                       <!-- FIRST COURSE SECTION -->
+                       =20
+                        <!-- Row of courses -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#fff4de">
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<!-- LINE 1 -->
+=09=09=09=09=09=09=09=09<table width=3D"620" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center"  bgcolor=3D"#fff4de">
+=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=
+=3D"190"  bgcolor=3D"#fff4de">
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"190" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D=
+"top">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09 =20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left"  cell=
+padding=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#FFFFFF" width=
+=3D"190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" =
+width=3D"100%"><a href=3D"https://alison.com/course/pilates-principles-the-=
+fundamentals-for-ultimate-full-body-workout?utm_content=3D1Course&&utm_sour=
+ce=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_y=
+ear_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"=
+_blank"><img alt=3D"1" src=3D"https://cdn01.alison-static.net/courses/5583/=
+alison_courseware_intro_5583.jpg" width=3D"200" height=3D"auto" style=3D"di=
+splay:block;" align=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/pilates-principles-the-fundamentals-for-ultimate-full-body-w=
+orkout?utm_content=3D1Course&&utm_source=3Doutbound+marketing&utm_medium=3D=
+email&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4=
+&utm_emailtype=3Dmarketing" target=3D"_blank" style=3D"text-decoration: non=
+e;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:15px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Pilates - Ultimate Full-Body Workout
+</b>=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <br><br><b=
+>  <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Ti=
+me.png" width=3D"13" height=3D"auto" /> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <img src=3D=
+"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png" wi=
+dth=3D"13" height=3D"auto" />   <b>6,664 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09  <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/pi=
+lates-principles-the-fundamentals-for-ultimate-full-body-workout?utm_conten=
+t=3D1Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaig=
+n=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3D=
+marketing]" target=3D"_blank" style=3D"outline: none; text-decoration:none;=
+"> <img src=3D"https://cdn01.alison-static.net/mail/2022/cta_start_learning=
+_2.png" width=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#fff4de">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ffeab6" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/superfood-nutrition-meals-=
+for-health-exercise-and-fitness?utm_content=3D1Course&&utm_source=3Doutboun=
+d+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025=
+&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img=
+ alt=3D"2" src=3D"https://cdn01.alison-static.net/courses/5798/alison_cours=
+eware_intro_5798.jpg" width=3D"200" height=3D"auto" style=3D"display:block;=
+" align=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/superfood-nutrition-meals-for-health-exercise-and-fitness?ut=
+m_content=3D1Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm=
+_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emai=
+ltype=3Dmarketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Superfood Nutrition: Meals for Health
+ </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 3 - 4 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" /> <b>5,130 </b>learners<br><br>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/su=
+perfood-nutrition-meals-for-health-exercise-and-fitness?utm_content=3D1Cour=
+se&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_=
+ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing=
+" target=3D"_blank" style=3D"outline: none; text-decoration:none;"> <img sr=
+c=3D"https://cdn01.alison-static.net/mail/2022/cta_start_learning_2.png" wi=
+dth=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#fff4de">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ffeab6" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/at-home-high-intensity-int=
+erval-training?utm_content=3D1Course&&utm_source=3Doutbound+marketing&utm_m=
+edium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D=
+2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"3" src=3D=
+"https://cdn01.alison-static.net/courses/5777/alison_courseware_intro_5777.=
+jpg" width=3D"200" height=3D"auto" style=3D"display:block;" align=3D"middle=
+"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/at-home-high-intensity-interval-training?utm_content=3D1Cour=
+se&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_=
+ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing=
+" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;"vali=
+gn=3D"top" display=3D"block"><br><b> At-Home High-Intensity Interval Traini=
+ng
+</b>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 =20
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 3 - 4 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <img src=3D=
+"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png" wi=
+dth=3D"13" height=3D"auto" />   <b>1,373 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/at=
+-home-high-intensity-interval-training?utm_content=3D1Course&&utm_source=3D=
+outbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_j=
+uly2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blan=
+k" style=3D"outline: none; text-decoration:none;"> <img src=3D"https://cdn0=
+1.alison-static.net/mail/2022/cta_start_learning_2.png" width=3D"120" heigh=
+t=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09<!-- Spacer Row -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" style=3D"height: 20px;"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- END Spacer Row -->
+=09=09=09=09=09=09=09=09  <!-- END FIRST COURSE SECTION -->
+ <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#f8=
+fae6" width=3D"650" valign=3D"top">
+                                <a href=3D"https://alison.com/tag/personal-=
+finance?utm_content=3Dsection&&utm_source=3Doutbound+marketing&utm_medium=
+=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-=
+7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01.=
+alison-static.net/mail/2022/ww_halfway_year_july2025_banner2.png" alt=3D"Mo=
+ney Management" style=3D"display: block"  width=3D"650" height=3D"auto"></a=
+>
+                            </td>
+                        </tr>
+                     =09=09=09=09=09=09=09=09=09=09=09=09<!-- Spacer -->
+=09=09=09=09=09=09<tr>
+                            <td style=3D"height: 10px; background: #f8fae6;=
+"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- End Spacer -->  <!-- COURSES SECTION -->
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#f8fae6">
+                      <tbody>
+                          <tr>
+                              <td align=3D"center" valign=3D"top" height=3D=
+"10px"  bgcolor=3D"#f8fae6"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#f8fae6">
+                     <tbody>             =20
+                       <!-- FIRST COURSE SECTION -->
+                       =20
+                        <!-- Row of courses -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#f8fae6">
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<!-- LINE 1 -->
+=09=09=09=09=09=09=09=09<table width=3D"620" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center"  bgcolor=3D"#f8fae6">
+=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=
+=3D"190"  bgcolor=3D"#f8fae6">
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"190" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D=
+"top">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09 =20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left"  cell=
+padding=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#f8fae6" width=
+=3D"190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" =
+width=3D"100%"><a href=3D"https://alison.com/course/debt-management-and-fin=
+ancial-planning?utm_content=3D2Course&&utm_source=3Doutbound+marketing&utm_=
+medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=
+=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"1" src=
+=3D"https://cdn01.alison-static.net/courses/6384/alison_courseware_intro_63=
+84.jpg" width=3D"200" height=3D"auto" style=3D"display:block;" align=3D"mid=
+dle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/debt-management-and-financial-planning?utm_content=3D2Course=
+&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww=
+_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" =
+target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Debt Management and Financial Planning
+  </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>6,298 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09  <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/de=
+bt-management-and-financial-planning?utm_content=3D2Course&&utm_source=3Dou=
+tbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_jul=
+y2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"=
+ style=3D"outline: none; text-decoration:none;"> <img src=3D"https://cdn01.=
+alison-static.net/mail/2022/cta_start_learning_2.png" width=3D"120" height=
+=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#f8fae6">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#dec0e1" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/artificial-intelligence-in=
+-personal-finance-and-investments?utm_content=3D2Course&&utm_source=3Doutbo=
+und+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july20=
+25&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><i=
+mg alt=3D"2" src=3D"https://cdn01.alison-static.net/courses/6770/alison_cou=
+rseware_intro_6770.jpg" width=3D"200" height=3D"auto" style=3D"display:bloc=
+k;" align=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/artificial-intelligence-in-personal-finance-and-investments?=
+utm_content=3D2Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&u=
+tm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_em=
+ailtype=3Dmarketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>AI in Personal Finance and Investments
+</b>
+
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>3,721</b> learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/ar=
+tificial-intelligence-in-personal-finance-and-investments?utm_content=3D2Co=
+urse&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D755=
+3_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketi=
+ng" target=3D"_blank" style=3D"outline: none; text-decoration:none;"> <img =
+src=3D"https://cdn01.alison-static.net/mail/2022/cta_start_learning_2.png" =
+width=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#f8fae6">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ffffff" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/practical-lessons-on-perso=
+nal-finance?utm_content=3D2Course&&utm_source=3Doutbound+marketing&utm_medi=
+um=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D202=
+5-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"3" src=3D"ht=
+tps://cdn01.alison-static.net/courses/4171/alison_courseware_intro_4171.jpg=
+" width=3D"200" height=3D"auto" style=3D"display:block;" align=3D"middle"><=
+/a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/practical-lessons-on-personal-finance?utm_content=3D2Course&=
+&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_=
+halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" t=
+arget=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Practical Lessons on Personal Finance
+ </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <img src=3D=
+"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png" wi=
+dth=3D"13" height=3D"auto" />   <b>17,620 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/pr=
+actical-lessons-on-personal-finance?utm_content=3D2Course&&utm_source=3Dout=
+bound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july=
+2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank" =
+style=3D"outline: none; text-decoration:none;"> <img src=3D"https://cdn01.a=
+lison-static.net/mail/2022/cta_start_learning_2.png" width=3D"120" height=
+=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09<!-- Spacer Row -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" style=3D"height: 20px;"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- END Spacer Row -->
+=09=09=09=09=09=09=09=09  <!-- END FIRST COURSE SECTION -->
+=09=09=09=09=09=09<!-- Leader 3 Banner -->
+                        <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#f2=
+fcff" width=3D"650" valign=3D"top">
+=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/tag/productivity?u=
+tm_content=3Dsection&&utm_source=3Doutbound+marketing&utm_medium=3Demail&ut=
+m_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_ema=
+iltype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01.alison-stat=
+ic.net/mail/2022/ww_halfway_year_july2025_banner3.png" alt=3D"Productive" s=
+tyle=3D"display: block"  width=3D"650" height=3D"auto"></a>
+                            </td>
+                        </tr>
+                        <!-- End Leader 3 Banner -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Spacer -->
+=09=09=09=09=09=09<tr>
+                            <td style=3D"height: 10px; background: #f2fcff;=
+"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- End Spacer -->
+                       <!-- COURSES SECTION -->
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#ffffff">
+                      <tbody>
+                          <tr>
+                              <td align=3D"center" valign=3D"top" height=3D=
+"10px"  bgcolor=3D"#f2fcff"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#ffffff">
+                     <tbody>             =20
+                       <!-- FIRST COURSE SECTION -->
+                                               =20
+                        <!-- Row of courses -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#f2fcff">
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<!-- LINE 1 -->
+=09=09=09=09=09=09=09=09<table width=3D"620" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center"  bgcolor=3D"#f2fcff">
+=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=
+=3D"190"  bgcolor=3D"#f2fcff">
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"190" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D=
+"top">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09 =20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left"  cell=
+padding=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ffffff" width=
+=3D"190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" =
+width=3D"100%"><a href=3D"https://alison.com/course/productivity-in-the-wor=
+kplace?utm_content=3D3Course&&utm_source=3Doutbound+marketing&utm_medium=3D=
+email&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4=
+&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"1" src=3D"https:/=
+/cdn01.alison-static.net/courses/5176/alison_courseware_intro_5176.jpg" wid=
+th=3D"200" height=3D"auto" style=3D"display:block;" align=3D"middle"></a> <=
+/td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/productivity-in-the-workplace?utm_content=3D3Course&&utm_sou=
+rce=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_=
+year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D=
+"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br> <b>Productivity in the Workplace
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b>1.5 - 2 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <img src=3D=
+"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png" wi=
+dth=3D"13" height=3D"auto" />   <b>4,523 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09  <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/pr=
+oductivity-in-the-workplace?utm_content=3D3Course&&utm_source=3Doutbound+ma=
+rketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm=
+_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank" style=3D=
+"outline: none; text-decoration:none;"> <img src=3D"https://cdn01.alison-st=
+atic.net/mail/2022/cta_start_learning_2.png" width=3D"120" height=3D"auto" =
+alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#f2fcff">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#f2fcff" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/artificial-intelligence-fo=
+r-task-management-and-productivity?utm_content=3D3Course&&utm_source=3Doutb=
+ound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2=
+025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><=
+img alt=3D"2" src=3D"https://cdn01.alison-static.net/courses/7361/alison_co=
+urseware_intro_7361.jpg" width=3D"200" height=3D"auto" style=3D"display:blo=
+ck;" align=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/artificial-intelligence-for-task-management-and-productivity=
+?utm_content=3D3Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&=
+utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_e=
+mailtype=3Dmarketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br> <b>AI for Management and Productivity
+</b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>1,235 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/ar=
+tificial-intelligence-for-task-management-and-productivity?utm_content=3D3C=
+ourse&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D75=
+53_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarket=
+ing" target=3D"_blank" style=3D"outline: none; text-decoration:none;"> <img=
+ src=3D"https://cdn01.alison-static.net/mail/2022/cta_start_learning_2.png"=
+ width=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#f2fcff">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#fbe5f2" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/how-to-boost-work-producti=
+vity-10x-with-chatgpt-and-ai?utm_content=3D3Course&&utm_source=3Doutbound+m=
+arketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&ut=
+m_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img al=
+t=3D"3" src=3D"https://cdn01.alison-static.net/courses/6884/alison_coursewa=
+re_intro_6884.jpg" width=3D"200" height=3D"auto" style=3D"display:block;" a=
+lign=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/how-to-boost-work-productivity-10x-with-chatgpt-and-ai?utm_c=
+ontent=3D3Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_ca=
+mpaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailty=
+pe=3Dmarketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Boost Productivity 10x With ChatGPT an=
+d AI
+</b> =20
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>2,851 </b>learners<br><br>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/ho=
+w-to-boost-work-productivity-10x-with-chatgpt-and-ai?utm_content=3D3Course&=
+&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_=
+halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" t=
+arget=3D"_blank" style=3D"outline: none; text-decoration:none;"> <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/cta_start_learning_2.png" wid=
+th=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09<!-- Spacer Row -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" style=3D"height: 20px;"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- END Spacer Row -->
+=09=09=09=09=09=09=09=09<!-- END FIRST COURSE SECTION -->
+
+=09=09=09=09=09=09<!-- Leader 4 Banner -->
+                        <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#ff=
+f4fc" width=3D"650" valign=3D"top">
+                                <a href=3D"https://alison.com/tag/business?=
+utm_content=3Dsection&&utm_source=3Doutbound+marketing&utm_medium=3Demail&u=
+tm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_em=
+ailtype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01.alison-sta=
+tic.net/mail/2022/ww_halfway_year_july2025_banner4.png" alt=3D"Business" st=
+yle=3D"display: block"  width=3D"650" height=3D"auto"></a>
+                            </td>
+                        </tr>
+                        <!-- End Leader 4 Banner -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- Spacer -->
+=09=09=09=09=09=09<tr>
+                            <td style=3D"height: 10px; background: #fff4fc;=
+"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- End Spacer -->
+                       <!-- COURSES SECTION -->
+=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#ffffff">
+                      <tbody>
+                          <tr>
+                              <td align=3D"center" valign=3D"top" height=3D=
+"10px"  bgcolor=3D"#fff4fc"></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <table width=3D"650" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" align=3D"center"  bgcolor=3D"#fff4fc">
+                     <tbody>             =20
+                       <!-- FIRST COURSE SECTION -->
+                            =20
+                        <!-- Row of courses -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#fff4fc">
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09<!-- LINE 1 -->
+=09=09=09=09=09=09=09=09<table width=3D"620" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center"  bgcolor=3D"#fff4fc">
+=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D"top" width=
+=3D"190"  bgcolor=3D"#fff4fc">
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"190" border=3D"0" cellp=
+adding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" valign=3D=
+"top">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09 =20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table align=3D"left"  cell=
+padding=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#FFFFFF" width=
+=3D"190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" =
+width=3D"100%"><a href=3D"https://alison.com/course/entrepreneurship-creati=
+ng-the-business-revised?utm_content=3D4Course&&utm_source=3Doutbound+market=
+ing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_dat=
+e_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"=
+1" src=3D"https://cdn01.alison-static.net/courses/1874/alison_courseware_in=
+tro_1874.jpg" width=3D"200" height=3D"auto" style=3D"display:block;" align=
+=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/entrepreneurship-creating-the-business-revised?utm_content=
+=3D4Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=
+=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dm=
+arketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b>Entrepreneurship: Creating the Busines=
+s
+</b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b> 1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>47,374 </b>learners<br><br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09  <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/en=
+trepreneurship-creating-the-business-revised?utm_content=3D4Course&&utm_sou=
+rce=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_=
+year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D=
+"_blank" style=3D"outline: none; text-decoration:none;"> <img src=3D"https:=
+//cdn01.alison-static.net/mail/2022/cta_start_learning_2.png" width=3D"120"=
+ height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#fff4fc">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ecf2c1" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/product-strategy-to-grow-y=
+our-business?utm_content=3D4Course&&utm_source=3Doutbound+marketing&utm_med=
+ium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D20=
+25-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=3D"2" src=3D"h=
+ttps://cdn01.alison-static.net/courses/4269/alison_courseware_intro_4269.jp=
+g" width=3D"200" height=3D"auto" style=3D"display:block;" align=3D"middle">=
+</a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/product-strategy-to-grow-your-business?utm_content=3D4Course=
+&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww=
+_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" =
+target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br><b> Product Strategy to Grow your Busines=
+s
+ </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b>1.5 - 3 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <img src=
+=3D"https://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png"=
+ width=3D"13" height=3D"auto" />  <b>3,994 </b>learners<br><br>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/pr=
+oduct-strategy-to-grow-your-business?utm_content=3D4Course&&utm_source=3Dou=
+tbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_jul=
+y2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"=
+ style=3D"outline: none; text-decoration:none;"> <img src=3D"https://cdn01.=
+alison-static.net/mail/2022/cta_start_learning_2.png" width=3D"120" height=
+=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"100%" height=3D"20">=
+ </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"top" width=
+=3D"190" bgcolor=3D"#fff4fc">
+=09=09=09=09=09=09=09=09=09=09=09  <table width=3D"190" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" align=3D"center">
+=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" valign=3D"to=
+p">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <table align=3D"left"  cellpadd=
+ing=3D"0" cellspacing=3D"0" display=3D"block" bgcolor=3D"#ecf2c1" width=3D"=
+190" style=3D"border-bottom: 2px solid #B8B8B8; display:block;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <!--CC IMAGE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td align=3D"center" wid=
+th=3D"100%"><a href=3D"https://alison.com/course/business-growth-start-ups-=
+investment-and-negotiation?utm_content=3D4Course&&utm_source=3Doutbound+mar=
+keting&utm_medium=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_=
+date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img alt=
+=3D"3" src=3D"https://cdn01.alison-static.net/courses/2663/alison_coursewar=
+e_intro_2663.jpg" width=3D"200" height=3D"auto" style=3D"display:block;" al=
+ign=3D"middle"></a> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<!-- CC TITLE -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <td width=3D"190" bgcolo=
+r=3D"#FFFFFF">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <a href=3D"https://ali=
+son.com/course/business-growth-start-ups-investment-and-negotiation?utm_con=
+tent=3D4Course&&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_camp=
+aign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=
+=3Dmarketing" target=3D"_blank" style=3D"text-decoration: none;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table bgcolor=3D"#F=
+FFFFF" width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" width=3D"190">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr height=3D"1=
+00">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" style=3D"text-align:left; padding:13px 10px 0px 15px;max-height:85px;=
+font-size: 16px; color: #343c41; font-family:'Roboto';line-height:1.2;" val=
+ign=3D"top" display=3D"block"><br> <b> Business Growth: Start-Ups and Negot=
+iation
+ </b>
+<br><br> <img src=3D"https://cdn01.alison-static.net/mail/2022/icon_for_ema=
+ils_Time.png" width=3D"13" height=3D"auto" /> <b>4 - 5 </b>hours<br>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <img src=3D"ht=
+tps://cdn01.alison-static.net/mail/2022/icon_for_emails_Learners.png" width=
+=3D"13" height=3D"auto" /> =09  <b>9,434 </b>learners<br><br>
+</td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <!-- CTA -->
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td style=3D"=
+padding: 0px 10px 10px 10px;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <table widt=
+h=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td =
+align=3D"center" width=3D"100%">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+able width=3D"100%" cellpadding=3D"0" cellspacing=3D"0">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+<tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09 <td style=3D"vertical-align: middle; text-align: left; width: 50px;">
+=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.com/course/bu=
+siness-growth-start-ups-investment-and-negotiation?utm_content=3D4Course&&u=
+tm_source=3Doutbound+marketing&utm_medium=3Demail&utm_campaign=3D7553_ww_ha=
+lfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=3Dmarketing" tar=
+get=3D"_blank" style=3D"outline: none; text-decoration:none;"> <img src=3D"=
+https://cdn01.alison-static.net/mail/2022/cta_start_learning_2.png" width=
+=3D"120" height=3D"auto" alt=3D">" /> </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=20
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </=
+table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   <tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  <td width=3D"=
+100%" height=3D"20"> </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09=09=09=09=09   </td>
+=09=09=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09=09=09 </tbody>
+=09=09=09=09=09=09=09=09  </table>
+=09=09=09=09=09=09<!-- Spacer Row -->
+=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09<td bgcolor=3D"#ffffff" style=3D"height: 20px;"></td>
+=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09<!-- END Spacer Row -->
+=09=09=09=09=09=09=09=09  <!-- END FIRST COURSE SECTION -->
+
+=09=09=09=09=09=09 =09=09=09=09=09=09<!-- Footer -->
+=09=09=09=09=09=09=09=09<table width=3D"650" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" align=3D"center" class=3D"fullCenter" bgcolor=3D"#f7f7f7=
+" style=3D"color: #f7f7f7;">
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09 <t=
+body>
+                        <tr>
+                            <td style=3D"text-align:center;" bgcolor=3D"#f7=
+f7f7" width=3D"650" valign=3D"top">
+                                <a href=3D"https://alison.com/user/recommen=
+dations?utm_content=3Dfooter_fyp&&utm_source=3Doutbound+marketing&utm_mediu=
+m=3Demail&utm_campaign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025=
+-7-4&utm_emailtype=3Dmarketing" target=3D"_blank"><img src=3D"https://cdn01=
+.alison-static.net/mail/2022/FYP_footer_2024.png" alt=3D"FYP" style=3D"widt=
+h: 650px; height: auto;"></a>
+=09=09=09=09=09=09=09=09<img src=3D"https://cdn01.alison-static.net/mail/20=
+22/Social_proof_footer_image1_jan2025.png" alt=3D"" style=3D"width: 650px; =
+height: auto;">
+                            </td>
+                        </tr>
+                        <!-- Heading -->
+
+
+                    </tbody>
+                </table>
+                <!-- END MAIL INNER WRAPPER -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- END MAIN EMAIL WRAPPER -->
+
+    <!-- FOOTER AREA -->
+=09
+    <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" =
+align=3D"center" class=3D"full" bgcolor=3D"#ffffff">
+        <tr>
+            <td width=3D"100%" valign=3D"top">
+                <table width=3D"620" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" align=3D"center">
+                    <tr>
+                        <td align=3D"center">
+                            <!-- Space -->
+                            <table width=3D"100%" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%" height=3D"25"></td>
+                                </tr>
+                            </table>
+                            <!-- End Space -->
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09<table>
+=09=09=09=09=09=09=09=09<tr>
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: left;">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"https://play.google.com/store/apps=
+/details?id=3Dcom.alison.mobile.flutter" target=3D"_blank" style=3D""><img =
+src=3D"https://cdn01.alison-static.net/mail/2020/email/google-play-badge1.p=
+ng" width=3D"160" alt=3D"" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: left;">
+=09=09=09=09=09=09=09=09=09=09<img src=3D"https://cdn01.alison-static.net/m=
+ail/2022/QR_code_scan_image1_april2023_v3.png" width=3D"160" alt=3D"" borde=
+r=3D"0">
+=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"50%" style=3D"text-a=
+lign: center;">
+=09=09=09=09=09=09=09=09=09=09<a href=3D"https://apps.apple.com/app/apple-s=
+tore/id1558468968" target=3D"_blank" style=3D""><img src=3D"https://cdn01.a=
+lison-static.net/mail/2020/email/apple-badge1.png" width=3D"160" alt=3D"" b=
+order=3D"0"></a>
+=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09</tr>
+=09=09=09=09=09=09=09</table>
+
+                            <table width=3D"600" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" align=3D"center" class=3D"full">
+                                <tr>
+                                    <td width=3D"100%">
+                                        <!-- Centered Text -->
+                                        <table width=3D"600" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" align=3D"center" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class=3D"fullCente=
+r">
+                                            <!-- SOCIAL MEDIA ICONS -->
+                                            <p style=3D"text-align: center;=
+ color: #5d666d; font-family: 'Open Sans', sans-serif; font-size: 13px; lin=
+e-height: 44px;">
+                                                Connect with us on social m=
+edia
+                                            </p>
+                                            <tr>
+                                                <td valign=3D"top" width=3D=
+"100%" style=3D"text-align: center; font-family: Helvetica, Arial, sans-ser=
+if; font-size: 14px; color: rgb(186, 186, 186); line-height: 22px;">
+                                                    <a href=3D"https://www.=
+facebook.com/AlisonCourses/" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-facebook-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Find us on Fa=
+cebook" border=3D"0"></a>
+                                                    <a href=3D"https://twit=
+ter.com/Alison_Learning" target=3D"_blank" style=3D"text-decoration: none;"=
+><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-new-tw=
+itter-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on Twitt=
+er" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+linkedin.com/company/alison" target=3D"_blank" style=3D"text-decoration: no=
+ne;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-ne=
+w-linkedin-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on =
+LinkedIn" border=3D"0"></a>
+                                                    <a href=3D"https://www.=
+instagram.com/alisonlearning/" target=3D"_blank" style=3D"text-decoration: =
+none;"><img src=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-=
+new-instagram-footer-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us =
+on Instagram" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://www.tiktok.com/@a=
+lisonlearning" target=3D"_blank" style=3D"text-decoration: none;"><img src=
+=3D"https://cdn01.alison-static.net/mail/2018/automated/14d-new-tiktok-foot=
+er-icon.png" width=3D"38" height=3D"38" alt=3D"Follow us on TikTok" border=
+=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09<a href=3D"https://alison.quora.com/=
+" target=3D"_blank" style=3D"text-decoration: none;"><img src=3D"https://cd=
+n01.alison-static.net/mail/2018/automated/quora-logo.png" width=3D"38" heig=
+ht=3D"38" alt=3D"Follow us on Quora" border=3D"0"></a>
+=09=09=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09=09=09
+                                                </td>
+                                            </tr>
+                                            <!-- END SOCIAL MEDIA ICONS -->
+=09=09=09=09=09=09=09=09=09
+                                            <tr >
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!-->
+                                                    <!--<![endif]-->
+                                                    <!--[if !mso]><!--><br>=
+<span style=3D"font-family: 'Open Sans', Helvetica ; font-weight: normal;">=
+<!--<![endif]-->No longer want to receive emails from Alison? Simply <span =
+style=3D"color: rgb(28, 186, 200);"><!--subscribe--><a href=3D"https://alis=
+on.com/unsubscribe?instant=3D1&lid=3D30019063&k=3DcGFydmF0aHltb2hhbjgzQGdtY=
+WlsLmNvbQ=3D=3D&utm_source=3Doutbound+marketing&utm_medium=3Demail&utm_camp=
+aign=3D7553_ww_halfway_year_july2025&utm_date_sent=3D2025-7-4&utm_emailtype=
+=3Dmarketing" style=3D"text-decoration: none; color: #0088cc;">Unsubscribe<=
+/a><!--unsub--></span>.
+                                                    <!--[if !mso]><!-->
+                                                    </span>
+                                                    <!--<![endif]-->
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td valign=3D"middle" width=
+=3D"100%" style=3D"text-align: center; font-family: 'Open Sans', Arial, san=
+s-serif; font-size: 12px; color: #596273; line-height: 22px;" class=3D"full=
+Center">
+                                                    <!--[if !mso]><!--><spa=
+n style=3D"font-family: 'Open Sans', Helvetica; font-weight: normal;"><!--<=
+![endif]-->Mount Carmel, Loughrea, Co. Galway, H62 AV62, Ireland.<br>=C2=A9=
+ 2025 Alison</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td width=3D"100%" height=
+=3D"25"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <!-- END FOOTER AREA -->
+    <img src=3D"http://www.google-analytics.com/collect?v=3D1&tid=3DUA-5450=
+2782-1&cid=3D30019063&t=3Devent&ni=3D1&cs=3Doutbound+marketing&ea=3Dopen&ec=
+=3Demail&cm=3Demail&cn=3Dww_halfway_year_july2025&el=3Dww_halfway_year_july=
+2025">
+<img src=3D"https://alison.com/email/marketing?u=3D30019063&j=3D7553&h=3D27=
+a523b6398df5e5a047&a=3Dww_halfway_year_july2025"></body>
+</html>
+----_NmP-13cc9751823c9af2-Part_1--
